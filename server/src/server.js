@@ -1,13 +1,14 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import mongoose from 'mongoose';
+
 import { connectDB } from './config/db.js';
 import authRoutes from './routes/authRoutes.js';
 import productRoutes from './routes/productRoutes.js';
 import orderRoutes from './routes/orderRoutes.js';
 import Product from './models/Product.js';
 import User from './models/User.js';
+import mongoose from 'mongoose';
 
 dotenv.config();
 
